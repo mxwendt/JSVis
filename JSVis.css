@@ -1,1 +1,82 @@
 /* CSS declarations go here */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+/* Layout ................................................................... */
+
+.l-nav {
+  width: 200px;
+  height: 100%;
+  background-color: #30475c;
+  border-right: 1px solid black;
+  color: white;
+  float: left;
+}
+
+.l-main {
+  width: 600px;
+  height: 100%;
+  padding: 0 20px;
+  float: left;
+}
+
+/* Logo ..................................................................... */
+
+h1.logo {
+  margin: 0;
+}
+
+h1.logo > a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+h1.logo > a:visited {
+  color: white;
+}
+
+h1.logo > a:hover {
+  background-color: #EC5E5D;
+}
+
+/* Navigation ............................................................... */
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.nav > li {
+  border-top: 1px solid white;
+}
+
+ul.nav > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+ul.nav > li > a:visited {
+  background-color: white;
+}
+
+ul.nav > li > a:hover {
+  background-color: #EC5E5D;
+}
+

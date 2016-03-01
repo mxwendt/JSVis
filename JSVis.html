@@ -2,13 +2,32 @@
   <title>JSVis</title>
 </head>
 
-<body>
-  <h1>Welcome to Meteor!</h1>
+<template name="ApplicationLayout">
+  <div class="l-nav">
+    <h1 class="logo"><a href="/">JSVis</a></h1>
+    <ul class="nav">
+      <li><a href="/vis/map">Map</a></li>
+      <li><a href="/vis/filter">Filter</a></li>
+      <li><a href="/vis/reduce">Reduce</a></li>
+    </ul>
+  </div>
+  <div class="l-main">
+    {{> yield}}
+  </div>
+</template>
 
-  {{> hello}}
-</body>
+<template name="Home">
+  <h2>Home</h2>
+</template>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="Map">
+  <h2>Map</h2>
+</template>
+
+<template name="Filter">
+  <h2>Filter</h2>
+</template>
+
+<template name="Reduce">
+  <h2>Reduce</h2>
 </template>
