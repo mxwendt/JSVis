@@ -27,7 +27,8 @@ if (Meteor.isClient) {
       return Session.get('argB');
     },
     return: function() {
-      return Number(Session.get('argA')) + Number(Session.get('argB'));
+      return eval(Session.get('argA').toString() + " + " +
+                  Session.get('argB').toString());
     }
   });
 

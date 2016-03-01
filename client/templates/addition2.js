@@ -32,10 +32,13 @@ if (Meteor.isClient) {
       return Session.get('argC');
     },
     return: function() {
-      if (Session.get('argC') === 'true')
-        return Number(Session.get('argA')) + Number(Session.get('argB')) * 2;
-      else
-        return Number(Session.get('argA')) + Number(Session.get('argB')) * 4;
+      if (Session.get('argC') === 'true') {
+        return eval(Session.get('argA').toString() + " + " +
+                    Session.get('argB').toString() + " * 2");
+      } else {
+        return eval(Session.get('argA').toString() + " + " +
+                    Session.get('argB').toString() + "* 4");
+      }
     }
   });
 
