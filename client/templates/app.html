@@ -1,0 +1,20 @@
+<head>
+  <title>JSVis</title>
+</head>
+
+<template name="ApplicationLayout">
+  <div class="l-nav">
+    <h1 class="logo"><a href="/">JSVis</a></h1>
+    <ul class="nav">
+      <li><a href="/vis/addition">Addition</a></li>
+      <li><a href="/vis/addition2">Addition 2</a></li>
+      <li><a href="/vis/multiplication">Multiplication</a></li>
+      <!-- <li><a href="/vis/map">Map</a></li> -->
+      <!-- <li><a href="/vis/filter">Filter</a></li> -->
+      <!-- <li><a href="/vis/reduce">Reduce</a></li> -->
+    </ul>
+  </div>
+  <div class="l-main">
+    {{> yield}}
+  </div>
+</template>

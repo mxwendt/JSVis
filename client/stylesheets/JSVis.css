@@ -99,6 +99,18 @@ code.indent-2 {
   text-indent: 16px;
 }
 
+code.indent-3 {
+  text-indent: 24px;
+}
+
+code.indent-4 {
+  text-indent: 32px;
+}
+
+code.is-highlighted {
+  background-color: #FFFF99;
+}
+
 code > input[type=range] {
   margin-left: 10px;
   vertical-align: text-top;

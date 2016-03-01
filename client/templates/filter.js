@@ -1,0 +1,6 @@
+/**
+ * Filter
+ */
+
+if (Meteor.isClient) {
+}

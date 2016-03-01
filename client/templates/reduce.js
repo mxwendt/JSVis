@@ -1,0 +1,6 @@
+/**
+ * Reduce
+ */
+
+if (Meteor.isClient) {
+}
