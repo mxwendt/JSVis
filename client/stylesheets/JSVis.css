@@ -25,7 +25,7 @@ body {
 }
 
 .l-main {
-  width: 600px;
+  width: 700px;
   height: 100%;
   padding: 0 20px;
   float: left;
@@ -80,3 +80,31 @@ ul.nav > li > a:hover {
   background-color: #EC5E5D;
 }
 
+/* Code ..................................................................... */
+
+code {
+  display: block;
+  padding: 0 10px;
+}
+
+code:nth-child(even) {
+  background-color: #F7F7F7;
+}
+
+code.indent-1 {
+  text-indent: 8px;
+}
+
+code.indent-2 {
+  text-indent: 16px;
+}
+
+code > input[type=range] {
+  margin-left: 10px;
+  vertical-align: text-top;
+}
+
+code > span.output {
+  color: #EC5E5D;
+  float: right;
+}
