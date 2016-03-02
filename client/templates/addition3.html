@@ -1,0 +1,16 @@
+<template name="Addition3">
+  <h2>Addition 3</h2>
+  <div class="l-code">
+    <code>/**</code>
+    <code class="indent-1">* @param {Number} argA [{{minValue}},{{maxValue}}]<input type="range" min="{{minValue}}" max="{{maxValue}}" value="{{argA}}" id="argA"> {{argA}}</code>
+    <code class="indent-1">*/</code>
+    <code>function sum(argA) {</code>
+    <code class="indent-2">var sum = 0;</code>
+    <code class="indent-2">for (var i = 0; i &lt; argA; i++) {</code>
+    <code class="indent-3">sum += 2;</code>
+    <code class="indent-2">}</code>
+    <code class="indent-2">return sum; // @return {sum} <span class="output">returns {{return}}</span></code>
+    <code>};</code>
+    <svg class="calls"></svg>
+  </div>
+</template>
