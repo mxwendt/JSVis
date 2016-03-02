@@ -1,15 +1,18 @@
 <template name="Addition2">
   <h2>Addition 2</h2>
-  <code>/**</code>
-  <code class="indent-1">* @param {Number} argA [{{minValue}},{{maxValue}}]<input type="range" min="{{minValue}}" max="{{maxValue}}" value="{{argA}}" id="argA"> {{argA}}</code>
-  <code class="indent-1">* @param {Number} argB [{{minValue}},{{maxValue}}]<input type="range" min="{{minValue}}" max="{{maxValue}}" value="{{argB}}" id="argB"> {{argB}}</code>
-  <code class="indent-1">* @param {Boolean} argC <input type="checkbox" checked="true" value="{{argC}}" id="argC"> {{argC}}</code>
-  <code class="indent-1">*/</code>
-  <code>function functionName(argA, argB, argC) {</code>
-  <code class="indent-2">if (argC) {</code>
-  <code class="indent-3" id="argC-true">return argA + argB * 2; // @return {argA, argB}<span class="output">returns {{return}}</span></code>
-  <code class="indent-2">} else {</code>
-  <code class="indent-3" id="argC-false">return argA + argB * 4; // @return {argA, argB}</code>
-  <code class="indent-2">}</code>
-  <code>};</code>
+  <div class="l-code">
+    <code>/**</code>
+    <code class="indent-1">* @param {Number} argA [{{minValue}},{{maxValue}}]<input type="range" min="{{minValue}}" max="{{maxValue}}" value="{{argA}}" id="argA"> {{argA}}</code>
+    <code class="indent-1">* @param {Number} argB [{{minValue}},{{maxValue}}]<input type="range" min="{{minValue}}" max="{{maxValue}}" value="{{argB}}" id="argB"> {{argB}}</code>
+    <code class="indent-1">* @param {Boolean} argC <input type="checkbox" checked="true" value="{{argC}}" id="argC"> {{argC}}</code>
+    <code class="indent-1">*/</code>
+    <code>function sum2(argA, argB, argC) {</code>
+    <code class="indent-2">if (argC) {</code>
+    <code class="indent-3" id="argC-true">return argA + argB * 2; // @return {argA, argB}<span class="output">returns {{return}}</span></code>
+    <code class="indent-2">} else {</code>
+    <code class="indent-3" id="argC-false">return argA + argB * 4; // @return {argA, argB}</code>
+    <code class="indent-2">}</code>
+    <code>};</code>
+    <svg class="calls"></svg>
+  </div>
 </template>

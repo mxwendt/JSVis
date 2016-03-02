@@ -12,7 +12,9 @@ if (Meteor.isClient) {
     Session.set('argA', 0);
     Session.set('argB', 0);
     Session.set('argC', 'true');
-    document.getElementById('argC-true').classList.toggle('is-highlighted');
+
+    // Draw the calls
+    updateDataCalls([{'x': 0.0, 'y': 7.0}]);
   });
 
   Template.Addition2.helpers({
@@ -51,17 +53,33 @@ if (Meteor.isClient) {
     },
     'change input#argC': function(e) {
       var output;
-      document.getElementById('argC-true').classList.toggle('is-highlighted');
-      document.getElementById('argC-false').classList.toggle('is-highlighted');
       if (e.target.checked) {
         output = document.getElementById('argC-false').removeChild(document.querySelector('.output'));
         document.getElementById('argC-true').appendChild(output);
         Session.set('argC', 'true');
+        updateDataCalls([{'x': 0.0, 'y': 7.0}]);
       } else {
         output = document.getElementById('argC-true').removeChild(document.querySelector('.output'));
         document.getElementById('argC-false').appendChild(output);
         Session.set('argC', 'false');
+        updateDataCalls([{'x': 0.0, 'y': 9.0}]);
       }
     }
   });
+
+  function updateDataCalls(data) {
+    var calls = d3.select('svg.calls')
+        .attr('width', '300px')
+        .attr('height', document.getElementsByTagName('code').length * 20 + 'px')
+      .selectAll('circle')
+        .data(data);
+
+    calls.exit().remove();
+
+    calls.enter().append('circle')
+        .attr('r', 3);
+    calls
+        .attr('cx', function(d) { return d.x * 10 + 3; })
+        .attr('cy', function(d) { return d.y * 20 + 12; })
+  }
 }

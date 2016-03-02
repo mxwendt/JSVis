@@ -12,6 +12,18 @@ if (Meteor.isClient) {
     Session.set('argA', 1);
     Session.set('argB', 1);
     Session.set('argC', 1);
+
+    // Draw the calls
+    var data = [{'x': 0.0, 'y': 6.0}];
+    var svg = d3.select('svg.calls')
+        .attr('width', '200px')
+        .attr('height', document.getElementsByTagName('code').length * 20 + 'px')
+      .selectAll('circle')
+        .data(data)
+      .enter().append('circle')
+        .attr('cx', function(d) { return d.x * 10 + 3; })
+        .attr('cy', function(d) { return d.y * 20 + 12; })
+        .attr('r', 3);
   });
 
   Template.Multiplication.helpers({
