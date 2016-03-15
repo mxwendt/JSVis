@@ -24,13 +24,19 @@ body {
   float: left;
 }
 
-.l-main {
+.l-main,
+.l-survey {
   width: 100%;
   height: 100%;
-  padding: 20px 20px 20px 220px;
+  padding: 20px;
 }
 
-.l-main > h2:first-child {
+.l-main {
+  padding-left: 220px;
+}
+
+.l-main > h2:first-child,
+.l-survey > h2:first-child {
   margin-top: 0;
 }
 
@@ -95,7 +101,7 @@ code {
   line-height: 20px;
 }
 
-code:nth-child(even) {
+code:nth-child(odd) {
   background-color: #F7F7F7;
 }
 
@@ -131,6 +137,8 @@ code > span.output {
 }
 
 svg.calls {
+  padding: 0 10px;
+  box-shadow: inset 0 0 5px 0px rgba(0,0,0,0.3);
   position: absolute;
   top: 0;
   left: 600px;
@@ -138,4 +146,86 @@ svg.calls {
 
 svg.calls circle {
   fill: #30475C;
+}
+
+span.calls-label {
+  position: absolute;
+  bottom: -12px;
+  left: 600px;
+  font-size: 10px;
+}
+
+/* Survey ................................................................... */
+
+form {
+  display: block;
+  width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+fieldset > h2:first-child {
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin-bottom: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.question > label:first-child {
+  margin: 10px 0;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  line-height: 18px;
+}
+
+label > input[type=text]:first-child {
+  display: block;
+  width: 100%;
+  padding: 3px 5px;
+  margin-top: 5px;
+  line-height: 20px;
+}
+
+.question {
+  padding: 20px 0;
+}
+
+.q,
+.a {
+  font-weight: bold;
+}
+
+.submission {
+  padding: 15px 0;
+  border-top: 1px solid black;
+  margin: 50px 0 150px 0;
+}
+
+.submission > button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: white;
+  float: right;
+  text-transform: uppercase;
+}
+
+.submission > button:hover {
+  background: green !important;
+  color: white;
+  cursor: pointer;
 }

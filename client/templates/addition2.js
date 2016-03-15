@@ -54,12 +54,14 @@ if (Meteor.isClient) {
     'change input#argC': function(e) {
       var output;
       if (e.target.checked) {
-        output = document.getElementById('argC-false').removeChild(document.querySelector('.output'));
+        output = document.getElementById('argC-false').querySelector('.output');
+        document.getElementById('argC-false').removeChild(output);
         document.getElementById('argC-true').appendChild(output);
         Session.set('argC', 'true');
         updateDataCalls([{'x': 0.0, 'y': 7.0}]);
       } else {
-        output = document.getElementById('argC-true').removeChild(document.querySelector('.output'));
+        output = document.getElementById('argC-true').querySelector('.output');
+        document.getElementById('argC-true').removeChild(output);
         document.getElementById('argC-false').appendChild(output);
         Session.set('argC', 'false');
         updateDataCalls([{'x': 0.0, 'y': 9.0}]);

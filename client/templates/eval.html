@@ -1,0 +1,15 @@
+<template name="Eval">
+  <h2>Eval</h2>
+  <textarea name="eval" rows="8" cols="40" id="eval">
+    /**
+     * @param {Number} argA [0,10]
+     * @param {Number} argB [0,10]
+     */
+    function sum(argA, argB) {
+      return argA + argB; // @return {argA, argB}
+      console.log("Hello eval!");
+    };
+    console.log("Hello eval!");
+  </textarea>
+  <button id="eval-button">Eval Code</button>
+</template>
