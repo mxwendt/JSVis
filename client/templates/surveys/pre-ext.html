@@ -2,41 +2,9 @@
   <h1>Survey</h1>
 
   <form>
-    <!-- Ask general questions about their background. -->
-    <!-- <fieldset>
-      <div class="question">
-        <label for="employees-total"><span class="q">Question:</span> How many people are working at your company?</label>
-        <input name="employees-total" id="employees-total" type="number" min="0" placeholder="Total employees">
-      </div>
-      <div class="question">
-        <label for="employees-programmers"><span class="q">Question:</span> How many of those people are programmer?</label>
-        <input name="employees-programmers" id="employees-programmers" type="number" min="0" placeholder="Total programmers">
-      </div>
-      <div class="question">
-        <label><span class="q">Question:</span> Is your company in the web industry?</label>
-        <label for="web-company-yes"><input name="web-company" id="web-company-yes" type="radio" value="yes">Yes</label>
-        <label for="web-company-no"><input name="web-company" id="web-company-no" type="radio" value="no">No</label>
-      </div>
-    </fieldset> -->
     <!-- Ask general questions about their comfort with reading and understanding code. -->
     <fieldset>
       <h2>Programming (1/3)</h2>
-      <!-- <div class="question">
-        <label for="job-title"><span class="q">Question:</span> What is your job title or how would you describe what you are doing at your company?</label>
-        <input name="job-title" id="job-title" type="text" placeholder="I am ...">
-      </div>
-      <div class="question">
-        <label for="experience"><span class="q">Question:</span> For how many years have you been programming?</label>
-        <input name="experience" id="experience" type="text" placeholder="Years">
-      </div>
-      <div class="question">
-        <label><span class="q">Question:</span> I spent most of my time working with code.</label>
-        <label for="time-strong-disagree"><input name="time" id="time-strong-disagree" type="radio" value="strong-disagree">Strong disagree</label>
-        <label for="time-disagree"><input name="time" id="time-disagree" type="radio" value="disagree">Disagree</label>
-        <label for="time-neither"><input name="time" id="time-neither" type="radio" value="neither">Neither</label>
-        <label for="time-agree"><input name="time" id="time-agree" type="radio" value="agree">Agree</label>
-        <label for="time-strong-agree"><input name="time" id="time-strong-agree" type="radio" value="strong-agree">Strong agree</label>
-      </div> -->
       <div class="question">
         <label><span class="q">Question:</span> How would you describe your programming skills?</label>
         <label for="skill-none"><input name="skill" id="skill-none" type="radio" value="none">None</label>
@@ -63,13 +31,13 @@
       </div>
       <div class="question">
         <label><span class="q">Question:</span> Pick reasons that makes code hard to read and/or understand. <i>(Mulitple answers are possible)</i></label>
-        <label for="reason-complexity"><input name="reason" id="reason-complexity" type="checkbox" value="true">Complexity</label>
         <label for="reason-abstraction"><input name="reason" id="reason-abstraction" type="checkbox" value="true">Abstraction</label>
+        <!-- <label for="reason-complexity"><input name="reason" id="reason-complexity" type="checkbox" value="true">Complexity</label> -->
         <label for="reason-calculation"><input name="reason" id="reason-calculation" type="checkbox" value="true">Calculation</label>
         <label for="reason-loc"><input name="reason" id="reason-loc" type="checkbox" value="true">Amount of lines of code</label>
         <label for="reason-alphanumeric"><input name="reason" id="reason-alphanumeric" type="checkbox" value="true">Alphanumeric notation</label>
         <label for="reason-overload"><input name="reason" id="reason-overload" type="checkbox" value="true">Information overload</label>
-        <label for="reason-shortage"><input name="reason" id="reason-shortage" type="checkbox" value="true">Information Shortage</label>
+        <label for="reason-shortage"><input name="reason" id="reason-shortage" type="checkbox" value="true">Information shortage</label>
         <label for="reason-none"><input name="reason" id="reason-none" type="checkbox" value="true">Code is not hard to read and/or understand</label>
         <label for="reason-other"><input name="reason-other" id="reason-other" type="text" placeholder="Type in other reasons (optional)"></label>
       </div>
@@ -107,21 +75,6 @@
         <label for="code-documentation-agree"><input name="code-documentation" id="code-documentation-agree" type="radio" value="agree">Agree</label>
         <label for="code-documentation-strong-agree"><input name="code-documentation" id="code-documentation-strong-agree" type="radio" value="strong-agree">Strong agree</label>
       </div>
-      <!-- <div class="question">
-        <label><span class="q">Question:</span> Documenting code is important in order to understand what the code is doing or is intended to do.</label>
-        <label for="document-code-doing-strong-disagree"><input name="document-code-doing" id="document-code-doing-strong-disagree" type="radio" value="strong-disagree">Strong disagree</label>
-        <label for="document-code-doing-disagree"><input name="document-code-doing" id="document-code-doing-disagree" type="radio" value="disagree">Disagree</label>
-        <label for="document-code-doing-neither"><input name="document-code-doing" id="document-code-doing-neither" type="radio" value="neither">Neither</label>
-        <label for="document-code-doing-agree"><input name="document-code-doing" id="document-code-doing-agree" type="radio" value="agree">Agree</label>
-        <label for="document-code-doing-strong-agree"><input name="document-code-doing" id="document-code-doing-strong-agree" type="radio" value="strong-agree">Strong agree</label>
-      </div> -->
-      <!-- <div class="question">
-        <label><span class="q">Question:</span> What do you consider to be the best way to document code?</label>
-        <label for="best-way-annotations"><input name="best-way" id="best-way-annotations" type="checkbox" value="true">Annotations next to the code, i.e. inline or block comments</label>
-        <label for="best-way-descriptions"><input name="best-way" id="best-way-descriptions" type="checkbox" value="true">Descriptions in another file, i.e. a website</label>
-        <label for="best-way-none"><input name="best-way" id="best-way-none" type="checkbox" value="true">Again, documentation is not important</label>
-        <label for="best-way-other">Other: <input name="best-way-other" id="best-way-other" type="text"></label>
-      </div> -->
       <div class="question">
         <label><span class="q">Question:</span> Other programmer’s comments inside source code helps to understand what the code doing.</label>
         <label for="annotate-code-doing-strong-disagree"><input name="annotate-code-doing" id="annotate-code-doing-strong-disagree" type="radio" value="strong-disagree">Strong disagree</label>
@@ -130,21 +83,13 @@
         <label for="annotate-code-doing-agree"><input name="annotate-code-doing" id="annotate-code-doing-agree" type="radio" value="agree">Agree</label>
         <label for="annotate-code-doing-strong-agree"><input name="annotate-code-doing" id="annotate-code-doing-strong-agree" type="radio" value="strong-agree">Strong agree</label>
       </div>
-      <!-- <div class="question">
-        <label><span class="q">Question:</span> Do you document code you have written?</label>
-        <label for="document-code-never"><input name="document-code" id="document-code-never" type="radio" value="never">Never</label>
-        <label for="document-code-rarely"><input name="document-code" id="document-code-rarely" type="radio" value="rarely">Rarely</label>
-        <label for="document-code-sometimes"><input name="document-code" id="document-code-sometimes" type="radio" value="sometimes">Sometimes</label>
-        <label for="document-code-often"><input name="document-code" id="document-code-often" type="radio" value="often">Often</label>
-        <label for="document-code-always"><input name="document-code" id="document-code-always" type="radio" value="always">Always</label>
-      </div> -->
       <div class="question">
         <label><span class="q">Question:</span> What should comments describe in order to be useful to a programmer? <i>(Mulitple answers are possible)</i></label>
         <label for="useful-functionality"><input name="useful" id="useful-functionality" type="checkbox" value="true">Functionality</label>
         <label for="useful-dependencies"><input name="useful" id="useful-dependencies" type="checkbox" value="true">Dependencies</label>
-        <label for="useful-control-flow"><input name="useful" id="useful-control-flow" type="checkbox" value="true">Control flow</label>
+        <!-- <label for="useful-control-flow"><input name="useful" id="useful-control-flow" type="checkbox" value="true">Control flow</label> -->
         <label for="useful-behavior"><input name="useful" id="useful-behavior" type="checkbox" value="true">Behavior</label>
-        <label for="useful-execution"><input name="useful" id="useful-execution" type="checkbox" value="true">Execution</label>
+        <!-- <label for="useful-execution"><input name="useful" id="useful-execution" type="checkbox" value="true">Execution</label> -->
         <label for="useful-limitations"><input name="useful" id="useful-limitations" type="checkbox" value="true">Limitations</label>
         <label for="useful-intention"><input name="useful" id="useful-intention" type="checkbox" value="true">Intention</label>
         <label for="useful-none"><input name="useful" id="useful-none" type="checkbox" value="true">I don't know</label>
@@ -154,9 +99,9 @@
         <label><span class="q">Question:</span> What do you think is hard to communicate just with code or comments? <i>(Mulitple answers are possible)</i></label>
         <label for="communicate-functionality"><input name="communicate" id="communicate-functionality" type="checkbox" value="true">Functionality</label>
         <label for="communicate-dependencies"><input name="communicate" id="communicate-dependencies" type="checkbox" value="true">Dependencies</label>
-        <label for="communicate-control-flow"><input name="communicate" id="communicate-control-flow" type="checkbox" value="true">Control flow</label>
+        <!-- <label for="communicate-control-flow"><input name="communicate" id="communicate-control-flow" type="checkbox" value="true">Control flow</label> -->
         <label for="communicate-behavior"><input name="communicate" id="communicate-behavior" type="checkbox" value="true">Behavior</label>
-        <label for="communicate-execution"><input name="communicate" id="communicate-execution" type="checkbox" value="true">Execution</label>
+        <!-- <label for="communicate-execution"><input name="communicate" id="communicate-execution" type="checkbox" value="true">Execution</label> -->
         <label for="communicate-limitations"><input name="communicate" id="communicate-limitations" type="checkbox" value="true">Limitations</label>
         <label for="communicate-intention"><input name="communicate" id="communicate-intention" type="checkbox" value="true">Intention</label>
         <label for="communicate-none"><input name="communicate" id="communicate-none" type="checkbox" value="true">I don't know</label>
@@ -177,8 +122,10 @@
       <div class="question">
         <label><span class="q">Question:</span> Where do you get useful information about other programmer’s or legacy code you have to work on? <i>(Mulitple answers are possible)</i></label>
         <label for="find-information-annotations"><input name="find-information" id="find-information-annotations" type="checkbox" value="true">Annotations, i.e. inline and block comments</label>
+        <label for="find-information-project"><input name="find-information" id="find-information-project" type="checkbox" value="true">Project documentations, i.e. generated with JavaDoc or something similar</label>
+        <label for="find-information-official"><input name="find-information" id="find-information-official" type="checkbox" value="true">Online documentations, i.e. for frameworks etc.</label>
+        <label for="find-information-online"><input name="find-information" id="find-information-online" type="checkbox" value="true">Online communities, i.e. StackOverflow</label>
         <label for="find-information-in-person"><input name="find-information" id="find-information-in-person" type="checkbox" value="true">Ask other programmers in person</label>
-        <label for="find-information-generated-documentation"><input name="find-information" id="find-information-generated-documentation" type="checkbox" value="true">Automatically generated documentation, i.e. JavaDoc or JSDoc or something similar</label>
         <label for="find-information-none"><input name="find-information" id="find-information-none" type="checkbox" value="true">I don’t need documentation, the code itself gives me all the information I need</label>
         <label for="find-information-other"><input name="find-information-other" id="find-information-other" type="text" placeholder="Type in other sources (optional)"></label>
       </div>
