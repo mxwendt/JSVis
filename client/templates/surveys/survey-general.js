@@ -3,7 +3,7 @@
  */
 
 if (Meteor.isClient) {
-    Template.PreExt.events({
+    Template.General.events({
         // Reasons question
         'change #reason input': function (e) {
             var $inputElem = $(e.target);
