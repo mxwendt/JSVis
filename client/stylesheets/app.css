@@ -27,8 +27,10 @@ body {
 .l-main,
 .l-survey {
   width: 100%;
-  height: 100%;
+  max-width: 650px;
   padding: 20px;
+  margin: 0 auto;
+  background-color: rgb(237, 235, 228);
 }
 
 .l-main {
@@ -182,7 +184,7 @@ label {
 }
 
 .question > label:first-child {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 input[type=radio],
@@ -197,12 +199,17 @@ label > input[type=text]:first-child {
   display: block;
   width: 100%;
   padding: 3px 5px;
-  margin-top: 5px;
+  margin: 10px 0 20px 0;
   line-height: 20px;
 }
 
 .question {
   padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+.question:last-child {
+  border-bottom: none;
 }
 
 .q,
